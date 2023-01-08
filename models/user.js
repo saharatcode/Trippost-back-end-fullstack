@@ -15,12 +15,11 @@ module.exports = (sequelize, DataTypes) => {
         }
       },
       email: {
+        charset: 'utf8',
+        collate: 'uutf8_bin',
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
-        // validate: {
-        //   isEmail: true
-        // }
       },
       password: {
         type: DataTypes.STRING,

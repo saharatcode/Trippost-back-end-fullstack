@@ -13,8 +13,10 @@ const myPostRoute = require('./routes/myPostRoute')
 
 app.use(cors());
 
+//ทุก request ต้องผ่าน middlewere พวกนี้
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 app.use('/static', express.static('public/images'))
 
 app.use('/users', userRoute)

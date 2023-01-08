@@ -11,4 +11,5 @@ const storage = multer.diskStorage({
     }
 });
 
+//middlewere รองรับข้อมูล formdata
 module.exports = multer({ storage});

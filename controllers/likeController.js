@@ -43,8 +43,8 @@ exports.deleteLike = async (req, res, next) => {
         next(err)
     }
 }
-//
 
+//Likes of postId
 exports.getWriterLike = async (req, res, next) => {
     try {
         const {id} = req.params;
